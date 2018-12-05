@@ -2,7 +2,7 @@ import pandas as pd
 
 In [3]:
 
-d2 = {'name':['Jonathan',' Ankeet','Taukir','Mayank'],'rno':[11,12,13,14],'marks':[76,87,98,78]}
+d2 = {'Name':['Jonathan',' Ankeet','Taukir','Mayank'],'R_no':[11,12,13,14],'Marks':[76,87,98,78]}
 
 from pandas import DataFrame as df
 
@@ -43,9 +43,9 @@ print (s,s.shape)
 f2m = df(s,index=list('abcd'),columns=list('12345'))
 f2m
 
-n_de = {'ename':{1:'Ankeet',2:'Jonathan',3:'Taukir'},'eno':{1:11,2:22,3:33},'esal':{1:11000,2:22000,3:33000}}
-print n_de
-edf = df(n_de)
+dict = {'ename':{1:'Ankeet',2:'Jonathan',3:'Taukir'},'eno':{1:11,2:22,3:33},'esal':{1:11000,2:22000,3:33000}}
+print dict
+edf = df(dict)
 print edf
 
 sed = se(['scientist','officer','assisstant'],index=range(1,4),name="designation")
