@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from pandas import Series as s
 from pandas import DataFrame as f
-'''
+
 a1=np.random.randint(10,20,40).reshape(10,4)
 
 f1=f(a1)
@@ -78,11 +78,11 @@ while True:
         Place_Wise()
     if ch==4:
         break
-'''
 #------------------------------------------------------------------------------------------------------------------------------------
 
 import pandas as pd
-data = pd.read_csv('lsf3',skiprows=1,header=None)
+data = pd.read_csv('lsf3',error_bad_lines=False,skiprows=1,header=None)
+print(data)
 data.head()
 
 #-------------------------------------------------------------------------------------------------------------------------------------
